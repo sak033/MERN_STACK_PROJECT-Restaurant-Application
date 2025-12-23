@@ -43,6 +43,7 @@ const Reservation = () => {
         setDate("");
         setTime("");
         setPhoneNumber("");
+        console.log("NAVIGATING TO SUCCESS");
         navigate("/success");
 
        }catch(error){
@@ -114,4 +115,4 @@ const Reservation = () => {
   )
 }
 
-export default Reservation
+export default Reservation;
