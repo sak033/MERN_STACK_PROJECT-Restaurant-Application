@@ -17,6 +17,8 @@ const Reservation = () => {
 
     const handleReservation=async(e)=>{
        e.preventDefault();
+       console.log("SUBMIT CLICKED");
+
        try{
          const {data}=await axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/v1/reservations/send`,
             {
