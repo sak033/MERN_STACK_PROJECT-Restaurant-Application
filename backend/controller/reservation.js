@@ -10,6 +10,8 @@ export const sendReservation=async(req,res,next)=>{
     }
     try{
         await Reservation.create({firstName,lastName,email,phoneNumber,date,time});
+        console.log("SAVED RESERVATION:", reservation);   
+
         res.status(200).json({
             success:true,
             message:"Reservation sent successfully",
