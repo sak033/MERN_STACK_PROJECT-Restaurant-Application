@@ -15,7 +15,7 @@ const Navbar = () => {
                 data.data[0].navbarLinks.map(element=>{
 
                     return(
-                        <Link to={element.Link} key={element.id} spy={true} smooth={true} duration={500}>
+                        <Link to={element.link} key={element.id} spy={true} smooth={true} duration={500}>
                             {element.title}
                         </Link>
                     )
