@@ -10,7 +10,7 @@ dotenv.config(); //configuring dotenv
 
 //code to connect backent to frontend
 app.use(cors({
-    origin:"*", //path of frontend
+    origin:"https://mernrestaurantapplication.netlify.app", //path of frontend
     methods: ['GET','POST','PUT','DELETE'], //methods used in frontend & backend
     credentials: true,
 }));
