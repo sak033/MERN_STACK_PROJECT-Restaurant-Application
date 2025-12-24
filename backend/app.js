@@ -10,9 +10,8 @@ dotenv.config(); //configuring dotenv
 
 //code to connect backent to frontend
 app.use(cors({
-    origin:["http://localhost:5173",
-      "https://restaurant-application-kveb.onrender.com"], //path of frontend
-    methods: ['POST'], //methods used in frontend & backend
+    origin:"*", //path of frontend
+    methods: ['GET','POST','PUT','DELETE'], //methods used in frontend & backend
     credentials: true,
 }));
 
