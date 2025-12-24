@@ -36,7 +36,10 @@ const Reservation = () => {
             withCredentials:true
          }
         );
-        toast.success(data.message,{ duration: 2000 });
+        toast.success("Reservation successful!", {
+        duration: 2000,
+        });
+
         setFirstName("");
         setLastName("");
         setEmail("");
@@ -45,6 +48,7 @@ const Reservation = () => {
         setPhoneNumber("");
         console.log("NAVIGATING TO SUCCESS");
         //navigate("/success");
+        
         setTimeout(() => {
         navigate("/success");
         }, 2000);
