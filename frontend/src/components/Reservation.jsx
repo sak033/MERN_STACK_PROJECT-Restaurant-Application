@@ -36,9 +36,7 @@ const Reservation = () => {
             withCredentials:true
          }
         );
-        toast.success("Reservation successful!", {
-        duration: 2000,
-        });
+        toast.success(data.message, { duration: 2000 });
 
         setFirstName("");
         setLastName("");
